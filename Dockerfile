@@ -20,8 +20,8 @@ RUN apt-get update \
   && locale-gen en_US.UTF-8 \
   
   # Add user
-  && useradd -U -d /config -s /bin/false mcf && \
-  && usermod -G users mcf && \
+  && useradd -U -d /config -s /bin/false mcf \
+  && usermod -G users mcf \
   
   # Fetch and extract S6 overlay
   && curl -J -L -o /tmp/s6-overlay-amd64.tar.gz https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz \
