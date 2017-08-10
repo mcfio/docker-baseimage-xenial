@@ -25,8 +25,8 @@ RUN \
   && usermod -G users mcf && \
   
   # Fetch and extract S6 overlay
-  && curl -J -L -o /tmp/s6-overlay-amd64.tar.gz https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz && \
-  && tar xzf /tmp/s6-overlay-amd64.tar.gz -C / && \
+  && curl -J -L -o /tmp/s6-overlay-amd64.tar.gz https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz \
+  && tar xzf /tmp/s6-overlay-amd64.tar.gz -C / \
 
   # Setup directories
   && mkdir -p \
