@@ -30,9 +30,9 @@ RUN \
 
   # Setup directories
   && mkdir -p \
-  	/app \
-  	/config \
-  	/defaults \
+    /app \
+    /config \
+    /defaults \
   
   # Cleanup
   && apt-get -y autoremove \
