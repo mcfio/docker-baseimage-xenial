@@ -9,8 +9,7 @@ ENV TERM="xterm" LANGUAGE="en_US.UTF-8" LANG="en_US.UTF-8" LC_ALL="C.UTF-8"
 ARG S6_OVERLAY_VERSION="v1.19.1.1"
 
 # update distribution install apt-utils and locales
-RUN \
-  && apt-get update \
+RUN apt-get update \
   && apt-get install -y \
     apt-utils \
     locales \
